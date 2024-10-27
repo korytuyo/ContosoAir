@@ -17,7 +17,7 @@ steps:
     condition: succeededOrFailed()
     inputs:
       testResultsFiles: $(System.DefaultWorkingDirectory)/test-report.xml
-  - task: PublishCodeCoverageResults@1
+  - task: PublishCodeCoverageResults@2
     displayName: 'Publish Code Coverage'
     condition: 'in(variables[''Agent.JobStatus''], ''Succeeded'')'
     inputs:
