@@ -8,6 +8,8 @@ steps:
       command: 'custom'
       customcommand: 'install --production'
   - script: |
+      npm uninstall node-sass
+      npm install sass
       npm install source-map-url
       npm install source-map-resolve
       npm install urix
