@@ -1,6 +1,6 @@
 # This project is retired, archived, and no longer supported. You are welcome to continue to use and fork the repository.
 
-[![Build Status](https://dev.azure.com/7empest/GitHub/_apis/build/status%2Fkorytuyo.ContosoAir?branchName=master)](https://dev.azure.com/7empest/GitHub/_build/latest?definitionId=6&branchName=master)
+[![Build Status](https://dev.azure.com/7empest/GitHub/_apis/build/status%2Fkorytuyo.ContosoAir?branchName=refs%2Fpull%2F1%2Fmerge)](https://dev.azure.com/7empest/GitHub/_build/latest?definitionId=6&branchName=refs%2Fpull%2F1%2Fmerge)
 
 # Microsoft.Github CI Demo
 
