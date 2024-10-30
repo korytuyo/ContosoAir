@@ -8,11 +8,6 @@ steps:
       command: 'custom'
       customcommand: 'install --production'
   - script: |
-      npm uninstall node-sass
-      npm install sass
-      npm install source-map-url
-      npm install source-map-resolve
-      npm install urix
       npm install
       npm test
     displayName: 'Run unit tests'
@@ -22,7 +17,7 @@ steps:
     condition: succeededOrFailed()
     inputs:
       testResultsFiles: $(System.DefaultWorkingDirectory)/test-report.xml
-  - task: PublishCodeCoverageResults@2
+  - task: PublishCodeCoverageResults@1
     displayName: 'Publish Code Coverage'
     condition: 'in(variables[''Agent.JobStatus''], ''Succeeded'')'
     inputs:
