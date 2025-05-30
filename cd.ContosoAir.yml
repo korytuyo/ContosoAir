@@ -9,31 +9,30 @@ trigger:
 resources:
  pipelines:
   - pipeline: buildContosoAir # identifier for the resource used in pipeline resource variables
-    source: korytuyo.ContosoAir # name of the pipeline that produces the artifact
+    source: # name of the pipeline that produces the artifact
     trigger:
-      branches: 
+      branches:
        include:
-        - master 
+         - master
 
 pool:
-  name: default
   vmImage: ubuntu-latest
 
 steps:
 - task: DownloadPipelineArtifact@2
   inputs:
     buildType: 'specific'
-    project: '5f27ee26-c9ab-43d1-bd0d-7c9e8e058522'
-    definition: '1'
+    project: '8376ace0-576d-4ee4-ba8c-09752498aae0'
+    definition: 'student1-51365101.ContosoAir'
     buildVersionToDownload: 'latest'
-    targetPath: '$(Pipeline.Workspace)'
+    targetPath: '$(Pipeline.Workspace)' 
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
     azureResourceManagerConnection: 'Azure Connection'
-    subscriptionId: '4e957664-957e-4e6d-8d54-039507b8d6a9'
+    subscriptionId: '583a90b2-c479-4d87-8566-f18937a8f9df'
     action: 'Create Or Update Resource Group'
-    resourceGroupName: 'rg-nabors'
+    resourceGroupName: 'rg-lod'
     location: 'Central US'
     templateLocation: 'Linked artifact'
     csmFile: '$(Pipeline.Workspace)/drop/Templates/azuredeploy.json'
