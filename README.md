@@ -1,6 +1,6 @@
 # This project is retired, archived, and no longer supported. You are welcome to continue to use and fork the repository.
 
-[![Build Status](https://dev.azure.com/Nabors-Automation/ProjectAlpha/_apis/build/status%2Fkorytuyo.ContosoAir?branchName=master)](https://dev.azure.com/Nabors-Automation/ProjectAlpha/_build/latest?definitionId=1&branchName=master)
+[![Build Status](https://dev.azure.com/GitHubIntegration3554/GitHub%20Integration/_apis/build/status%2Fkorytuyo.ContosoAir?branchName=master)](https://dev.azure.com/GitHubIntegration3554/GitHub%20Integration/_build/latest?definitionId=1&branchName=master)
 
 # Microsoft.Github CI Demo
 
