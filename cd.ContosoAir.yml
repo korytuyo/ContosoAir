@@ -22,7 +22,7 @@ steps:
 - task: DownloadPipelineArtifact@2
   inputs:
     buildType: 'specific'
-    project: 'GitHub Integration'
+    project: 'PartsUnlimited'
     definition: 'korytuyo.ContosoAir'
     buildVersionToDownload: 'latest'
     targetPath: '$(Pipeline.Workspace)'
